@@ -4,21 +4,20 @@ import { Navigate } from "react-router-dom";
 
 // Profile component
 const Profile = ({ setUserData }) => {
-  // State hooks to store user inputs
-  const [name, setName] = useState(""); // Stores the name of the user
-  const [age, setAge] = useState(""); // Stores the age of the user
-  const [file, setFile] = useState(null); // Stores the uploaded file (profile picture)
-  const [error, setError] = useState(""); // Stores error messages
+  const [name, setName] = useState("");
+  const [age, setAge] = useState("");
+  const [file, setFile] = useState(null);
+  const [error, setError] = useState("");
   const [redirectToDashboard, setRedirectToDashboard] = useState(false); // Manages redirect to dashboard
 
   // Handles the file input change event
   const handleFileChange = (e) => {
-    const selectedFile = e.target.files[0]; // Get the selected file
+    const selectedFile = e.target.files[0];
     if (selectedFile && (selectedFile.type === "image/png" || selectedFile.type === "image/jpeg")) {
-      setFile(selectedFile); // Set the selected file
+      setFile(selectedFile);
       setError(""); // Clear any previous error
     } else {
-      setError("Please upload a PNG or JPEG file."); // Show error if file type is invalid
+      setError("Please upload a PNG or JPEG file.");
     }
   };
 
@@ -32,7 +31,6 @@ const Profile = ({ setUserData }) => {
       return;
     }
 
-    // Log the file to the console (for debugging purposes)
     console.log(file);
 
     // Set user data in the parent component

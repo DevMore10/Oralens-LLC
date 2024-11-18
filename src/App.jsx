@@ -9,7 +9,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { LayoutDashboardIcon, SettingsIcon, UserPenIcon } from "lucide-react";
 
 function App() {
-  const [userData, setUserData] = useState(null); // Set initial state to null
+  const [userData, setUserData] = useState(null); 
 
   return (
     <Router>

@@ -7,12 +7,11 @@ const Dashboard = ({ userData }) => {
   if (!userData) {
     return (
       <div className="w-full mx-auto bg-gradient-to-br from-[#B9E5E8] to-[#7AB2D3] p-8 rounded-2xl shadow-2xl m-10 mr-10 text-center">
-        {/* User Icon */}
+      
         <div className="bg-[#7AB2D3] rounded-full p-4 inline-block mb-4">
           <User className="w-12 h-12 text-[#4A628A]" />
         </div>
 
-        {/* No Profile Data message */}
         <h2 className="text-3xl font-bold text-[#4A628A] mb-4">No Profile Data</h2>
         <p className="text-[#4A628A] mb-6">Create a profile to unlock personalized insights</p>
 
@@ -30,7 +29,7 @@ const Dashboard = ({ userData }) => {
     <div className="w-full grid grid-cols-3 grid-rows-2 gap-4 bg-white rounded-2xl shadow-2xl p-6">
       {/* Name Section */}
       <div className="col-span-2 flex items-center space-x-4 bg-[#DFF2EB] p-4 rounded-lg">
-        {/* User Icon */}
+
         <User className="w-10 h-10 text-[#4A628A]" />
         <div>
           <p className="text-sm text-[#4A628A] font-medium">Name</p>
@@ -40,7 +39,6 @@ const Dashboard = ({ userData }) => {
 
       {/* Age Section */}
       <div className="row-start-2 col-span-2 flex items-center space-x-4 bg-[#B9E5E8] p-4 rounded-lg">
-        {/* Calendar Icon */}
         <Calendar className="w-10 h-10 text-[#4A628A]" />
         <div>
           <p className="text-sm text-[#4A628A] font-medium">Age</p>
@@ -53,7 +51,6 @@ const Dashboard = ({ userData }) => {
       {/* Uploaded File Section (Profile Picture) */}
       {userData.file && (
         <div className="row-span-2 col-start-3 bg-[#DFF2EB] p-4 rounded-lg flex items-center justify-center">
-          {/* Image with hover effect */}
           <div className="relative group w-full h-full">
             <img
               src={userData.file}
@@ -66,7 +63,6 @@ const Dashboard = ({ userData }) => {
               className="absolute inset-0 bg-black bg-opacity-0 
               group-hover:bg-opacity-20 transition-all duration-300 
               rounded-lg flex items-center justify-center">
-              {/* File Image Icon (Visible on hover) */}
               <FileImage
                 className="w-12 h-12 text-white 
                 opacity-0 group-hover:opacity-100 transition-opacity"
