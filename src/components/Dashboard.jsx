@@ -1,5 +1,6 @@
 import React from "react";
 import { User, FileImage, Calendar } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Dashboard = ({ userData }) => {
   // Check if userData is null or missing fields
@@ -16,11 +17,11 @@ const Dashboard = ({ userData }) => {
         <p className="text-[#4A628A] mb-6">Create a profile to unlock personalized insights</p>
 
         {/* Button to redirect to profile creation */}
-        <a href="/profile">
+        <Link to="/profile">
           <button className="bg-[#DFF2EB] text-[#4A628A] px-6 py-3 rounded-lg hover:bg-[#B9E5E8] transition-colors">
             Create Profile
           </button>
-        </a>
+        </Link>
       </div>
     );
   }
