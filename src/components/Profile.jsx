@@ -50,7 +50,7 @@ const Profile = ({ setUserData }) => {
   }
 
   return (
-    <div className="w-full grid grid-cols-3 gap-6 bg-white rounded-2xl shadow-2xl p-8 mt-5">
+    <div className="w-full grid grid-cols-3 gap-6 bg-white rounded-2xl shadow-2xl p-8 my-10 mr-10">
       {/* Form Section */}
       <div className="col-span-2">
         <h2 className="text-3xl font-bold text-center mb-8 text-[#4A628A]">Create Profile</h2>

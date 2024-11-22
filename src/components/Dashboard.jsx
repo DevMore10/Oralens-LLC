@@ -25,7 +25,7 @@ const Dashboard = ({ userData }) => {
   }
 
   return (
-    <div className="w-full grid grid-cols-3 grid-rows-2 gap-4 bg-white rounded-2xl shadow-2xl p-6">
+    <div className="w-full grid grid-cols-3 grid-rows-2 gap-4 bg-white rounded-2xl shadow-2xl my-10 mr-10 p-6">
       {/* Name Section */}
       <div className="col-span-2 flex items-center space-x-4 bg-[#DFF2EB] p-4 rounded-lg">
         <User className="w-10 h-10 text-[#4A628A]" />
