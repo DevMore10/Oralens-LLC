@@ -9,13 +9,13 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { LayoutDashboardIcon, SettingsIcon, UserPenIcon } from "lucide-react";
 
 function App() {
-  const [userData, setUserData] = useState(null); 
+  const [userData, setUserData] = useState(null);
 
   return (
     <Router>
       <Navbar />
-      <main className="container">
-        <div className="flex gap-10">
+      <main className="container ">
+        <div className="w-full flex gap-10 ">
           <Sidebar />
           <Routes>
             <Route

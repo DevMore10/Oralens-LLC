@@ -6,8 +6,7 @@ const Dashboard = ({ userData }) => {
   // Check if userData is null or missing fields
   if (!userData) {
     return (
-      <div className="w-full mx-auto bg-gradient-to-br from-[#B9E5E8] to-[#7AB2D3] p-8 rounded-2xl shadow-2xl m-10 mr-10 text-center">
-      
+      <div className="w-full bg-gradient-to-br from-[#B9E5E8] to-[#7AB2D3] p-8 rounded-2xl shadow-2xl my-10 mr-10 text-center">
         <div className="bg-[#7AB2D3] rounded-full p-4 inline-block mb-4">
           <User className="w-12 h-12 text-[#4A628A]" />
         </div>
@@ -29,7 +28,6 @@ const Dashboard = ({ userData }) => {
     <div className="w-full grid grid-cols-3 grid-rows-2 gap-4 bg-white rounded-2xl shadow-2xl p-6">
       {/* Name Section */}
       <div className="col-span-2 flex items-center space-x-4 bg-[#DFF2EB] p-4 rounded-lg">
-
         <User className="w-10 h-10 text-[#4A628A]" />
         <div>
           <p className="text-sm text-[#4A628A] font-medium">Name</p>
